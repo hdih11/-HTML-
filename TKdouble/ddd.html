@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>田客</title>
+		<link rel="stylesheet" href="css/TA.css">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<div class="header"><!--header盒子-->
+			<div class="logo"><!--存放logo的盒子-->
+				<img src="img/logo.jpg" alt="这是logo" title="漂亮的logo" width="129px" height="129px"/>
+			</div>
+			<div class="seacher"><!--搜索栏-->
+                    <input class="seacher_input" type="text" placeholder="内容----"/>
+				    <input type="button" value="搜索" class="button"/>
+			</div>
+			<div class="icon1"><!--icon1-->
+				<img src="img/icon1.jpg" alt="icon1" width="89px" height="82px"/>
+				<p class="icon1yi">个人主页</p>
+			</div>
+			<div class="icon2"><!--我的-->
+				<img src="img/icon2.jpg" alt="icon1" width="89px" height="82px"/>
+				<p class="icon2yi">我的</p>
+			</div>
+			<div class="icon3"><!--联系人-->
+				<img src="img/icon3.jpg" alt="icon1" width="89px" height="82px"/>
+				<p class="icon3yi">联系人</p>
+			</div>
+			<div class="icon4"><!--镐头-->
+				<img src="img/icon4.jpg" alt="icon1" width="89px" height="82px"/>
+				<p class="icon4yi">个人主页</p>
+			</div>
+			<div class="icon5"><!--设置-->
+				<img src="img/icon1.jpg" alt="icon1" width="89px" height="82px"/>
+				<p class="icon5yi">设置</p>
+			</div>
+		</div>
+		<div><!--内容-->
+		
+			
+		
+			<div class="liebiao">
+				<ul>
+					<li><strong>全部</strong></li>
+					<li>水果</li>
+					<li>谷物</li>
+					<li>主粮</li>
+					<li>奶制品</li>
+				</ul>
+			</div>
+			<div class="shopping1">
+				<!--有机黄瓜-->
+				<img src="img/shopping1.jpg" width="266px" height="174px"/>
+				<span class="t1"><a href="./Shelves.html">有机黄瓜</a></span>
+				<span class="t2">￥12.00</span>
+				<span></span>
+			</div>
+			<!--小麦-->
+			<div class="shopping2">
+				<img src="img/shopping2.jpg" width="266px" height="174px"/>
+				<span class="t1">有机小麦</span>
+				<span class="t2">123￥</span>
+			</div>
+			<div class="shopping3">
+				<img src="./img/shopping3.jpg" width="266px" height="174px"/>
+				<span class="t1">土猪肉</span>
+				<span class="t2">16￥/斤</span>
+			</div>
+			<div class="shopping4">
+				<img scr="./img/shopping5.jpg" width="266px" height="174px"/>
+				<span class="t1">有机绿豆</span>
+				<span class="t2">12￥/斤</span>
+			</div>
+			<div class="lunbotu">
+				<ul>
+					<li class="imgs">
+						<img src="./img/shopping1.jpg" width="500px" height="400px"/>
+						<span class="a1"> <a href="eyJhZCI6IiIsImNoIjoiIiwic2hvcCI6IiIsInNrdSI6IiIsInRzIjoiIiwidW5pcWlkIjoie1wiY2xpY2tfaWRcIjpcIjViOWRjNWJiLTIyODItNDE1Yy04ZDE2LThiMWE3OTFhZmE1MlwiLFwicG9zX2lkXCI6XCIyNjE3XCIsXCJzaWRcIjpcIjc2YTM2MGU4LWY1NjctNGM1ZC1hM2VkLTNiMDJkMDkyZmRkM1wiLFwic2t1X2lkXCI6XCIxMDAwMTg2NjA2NjdcIn0ifQ">有机黄瓜</a></span>
+					</li>
+					<li class="imgs">
+						<img src="./img/shopping2.jpg" width="500px" height="400px"/>
+						<span class="a1">有机小麦</span>
+					</li>
+					<li class="imgs">
+						<img src="./img/shopping3.jpg" width="500px" height="400px"/>
+						<span class="a1">农家土猪肉</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<script>
+			window.onload = function(){
+				var imgs = document.getElementsByClassName('imgs');
+				var i = 0;
+				imgs[i].style.display='block';
+				setInterval(function(){
+					if(i<imgs.length){
+						i++;
+						if(i<imgs.length)
+						if(i>imgs.length-1){
+							i=0;
+						}
+						imgs[i].style.display='block';
+					}
+					for(j=0;j<imgs.length;j++){
+						if(i!=j){
+							imgs[j].style.display='none';
+						}
+					}
+				},1000);
+			}
+			
+		</script>
+		<div class="adf"></div>
+	</body>
+</html>
